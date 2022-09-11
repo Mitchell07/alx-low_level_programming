@@ -1,25 +1,25 @@
 #include <stdio.h>
-/* more headers goes there */
-
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  int i;
-  /* your code goes there */
-  for    (i = 0;    i < 9;    i++)
-    {
-      putchar((i % 10) + '0');
-      if    (i == 9)
+	int d;
+
+	for (d = '0'; d <= '9'; d++)
 	{
-	  continue;
-	  putchar(',');
-	  putchar(' ');
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-    }
-  putchar('\n');
-  return (0);
+	putchar('\n');
+
+	return (0);
 }

@@ -1,23 +1,20 @@
 #include <stdio.h>
-/* more headers goes there */
-
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  char alpha, ALPHA;
-  /* your code goes there */
-  for    (alpha = 'a';    alpha <= 'z';    alpha++)
-    {
-      putchar(alpha);
-    }
-  for    (ALPHA = 'A';    ALPHA <= 'Z';    ALPHA++)
-    {
-      putchar(ALPHA);
-    }
-  putchar('\n');
-  return (0);
+	char low;
+
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+	for (low = 'A'; low <= 'Z'; low++)
+		putchar(low);
+	putchar('\n');
+
+	return (0);
 }

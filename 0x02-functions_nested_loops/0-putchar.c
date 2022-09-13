@@ -1,15 +1,19 @@
-#include <stdio.h>
-
+#include "stdio.h"
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char name[20] = "_putchar";
+	char *sh = "_putchar";
 
-	printf("%s\n", name);
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
 
 	return (0);
 }

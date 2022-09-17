@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-        char name[20] = "_putchar";
+	char name[20] = "_putchar";
 
 	printf("%s\n", name);
 
